@@ -22,11 +22,12 @@ export class NavBarComponent{
     }
 
     searchSessions(searchTerm: any){
+        console.log('in nav bar searchSessions method')
         this.eventService.searchSessions(searchTerm).subscribe(
             (sessions: any) => {
                 this.foundSessions =sessions;
-            }
-        );
+            });
+            console.log(this.foundSessions)
     }
 
     ngOnInit(){

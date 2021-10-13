@@ -15,7 +15,6 @@ export class AuthService{
     }
 
     IsAuthenticated():boolean{
-        debugger;
         return this.currentUser == null ? false :true ;
     }
 
